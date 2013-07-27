@@ -1,1 +1,11 @@
-<h2>Awesomeness</h2>
+<h2>Welcome <%= @user[:name]%></h2>
+<form action="/logout" method="POST">
+	<input type="hidden" name="_method" value="DELETE"/>
+	<input type="submit" value="Logout" class="btn"/>
+</form>
+
+<div class="row">
+	<h4>Tweets: <%= @user[:tweets_count]%></h4>
+	<h4>Followers: <%= @user[:followers]%></h4>
+	<h4>Friends: <%= @user[:friends]%></h4>
+</div>
