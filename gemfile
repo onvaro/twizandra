@@ -3,3 +3,9 @@ gem 'sinatra'
 gem 'cql-rb', '~> 1.1.0.pre1'
 gem 'rake'
 gem 'pry'
+gem 'rspec'
+
+group :test do
+  gem 'rspec', :require => 'spec'
+  gem 'rack-test'
+end
