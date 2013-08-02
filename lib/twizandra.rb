@@ -1,4 +1,3 @@
-require 'connection'
 require 'pry'
 
 enable :sessions
@@ -57,11 +56,11 @@ end
 
 private
 
-# Connection using binary protocol
-def connection
-  @db = Connection.client
-end
-
+# # Connection using binary protocol
+# def connection
+#   @db = Connection.client
+# end
+# 
 
 def authenticate!
   redirect '/login' if session[:username].nil?  

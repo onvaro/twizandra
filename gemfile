@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 gem 'sinatra'
-gem 'cql-rb', '~> 1.1.0.pre1'
+gem 'virsandra', :git => "https://github.com/ottbot/virsandra.git", :branch => "binary-protocol"
 gem 'rake'
 gem 'pry'
 gem 'rspec'
